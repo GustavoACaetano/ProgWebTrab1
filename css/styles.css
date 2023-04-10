@@ -1,0 +1,86 @@
+body,
+ul,
+li,
+p {
+	
+	margin: 0px;
+	padding: 0 px;
+	list-style: none;
+	font-size: 1.2rem;
+	font-family: Arial;
+
+}
+img{
+	width: 150px;
+}
+
+h1{
+	
+	text-align: center;
+	margin-top: 100px;
+}
+
+img{
+	max-width:100%;/*expandem no máximo até 100%*/
+	display: block;
+}
+
+a{
+	text-decoration: none;
+	color: green;
+}
+
+footer{
+	text-align: center;
+	background: #ffffff;
+	margin-top: 39%;
+	
+}
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 800px;/*tamanho máximo da seção*/
+	margin: 0 auto; /*centraliza na margem automaticamente*/
+}
+
+/*significa filho-direto do elemento. Seleciona todos os filhos-diretos do elemento.*/
+.flex > div{
+	/*flex-grow, flex-shrink, and flex-basis*/
+	flex: 1 1 200px;
+	margin: 10px;
+	
+
+}
+
+.header{
+	/*Fica o menu do lado do logo - modo default rows*/
+	display: flex;
+	
+	/*espaço entre o logo e o menu*/
+	
+	justify-content:space-between;
+	padding:20px;
+	/*logo fica alinhado com o menu*/
+	align-items: center;
+	
+	/*Quando a tela for bem pequena o menu quebra, mas o logo continua em cima*/
+	background: #d5f4e6;
+	
+}
+
+.menu{
+	display: flex;
+	
+}
+
+.menu li{
+	margin-left:20px;
+}
+
+.menu li a{
+	padding: 5 px;
+	}
+
+body{
+	background: #F5FFFA;
+	}
