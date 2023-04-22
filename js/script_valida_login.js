@@ -1,4 +1,5 @@
 const btnEnviar = document.querySelector("#btnEnviar").addEventListener("click", autenticar);
+// Pegando o botão da tela e adicionando um EventListerner de click
 
 function autenticar(){
     let verificaEmail = false;
@@ -8,68 +9,94 @@ function autenticar(){
     const noEmail = document.querySelector("#noEmail");
     const noPass = document.querySelector("#noPass");
     const aotPass = document.querySelector("#aotPass");
+    // Declarando variáveis
     
+    // Verificando se o campo de email está vazio
     if(campoEmail.value == ""){
+        // Mudando a borda do campo
         campoEmail.style.cssText = 'border: 2px solid #f58181';
+        // Mostrando a mensagem de erro;
         noEmail.style.display = "block";
+        // Variável de verificação
         verificaEmail = false;
     }else{
+        // Mudando a borda do campo
         campoEmail.style.cssText = 'border: 2px solid rgb(95, 201, 74)';
+        // Escondendo a mensagem de erro;
         noEmail.style.display = "none";
+        // Variável de verificação
         verificaEmail = true;
     }
 
     if (campoSenha.value == "") {
+        // Mudando a borda do campo
         campoSenha.style.cssText = 'border: 2px solid #f58181';
+        // Mostrando a mensagem de erro;
         noPass.style.display = "block";
+        // Escondendo a mensagem de erro;
         aotPass.style.display = "none";
+         // Variável de verificação
         verificaSenha = false;
     } else if (campoSenha.value.length < 6 || campoSenha.value.length > 30) {
+        // Mudando a borda do campo
         campoSenha.style.cssText = 'border: 2px solid #f58181';
+        // Mostrando a mensagem de erro;
         aotPass.style.display = "block";
+        // Escondendo a mensagem de erro;
         noPass.style.display = "none";
+         // Variável de verificação
         verificaSenha = false;
     } else {
+        // Mudando a borda do campo
         campoSenha.style.cssText = 'border: 2px solid rgb(95, 201, 74)';
+
+        // Escondendo as mensagens de erro;
         noPass.style.display = "none";
         aotPass.style.display = "none";
+         // Variável de verificação
         verificaSenha = true;
     }
 
+    // Verificando se um dos campos estíver errado
     if(!verificaEmail || !verificaSenha){
         return;
     }
 
+    // Verificando se o usuário está cadastrado
     if(verificaLogin(campoEmail.value, campoSenha.value) == "certo"){
-        passaTela();
+        passaTela(campoEmail.value);
     } else{
         alert(verificaLogin(campoEmail.value, campoSenha.value));
     }
 }
 
 function verificaLogin(email, senha){
-    const dadosSalvos = localStorage.getItem('dadosCadastro');
+    // Pegando as informações do localStorage onde o email deveria estar cadastrado
+    const dadosSalvos = localStorage.getItem(email);
+    // Transformando para objeto
     const dados = JSON.parse(dadosSalvos);
 
-    if (dados.email != email && dados.senha != senha) {
-        return "Email e senha estão errados!";
-    }
-
-    if(dados.email == email){
-        if(dados.senha == senha){
-            return "certo";
+    // Verificando se o email está cadastrado
+    if (dadosSalvos == null){
+        return "Esse email não está cadastrado!"
+    } else {
+        // Vericando se a senha é a mesma
+        if (dados.senha == senha){
+            return "certo"
         } else {
             return "A senha está errada!";
         }
     }
-    return "O email está errado!";
 }
 
-function passaTela(){
+function passaTela(email){
+    // Salvando o email na chave logado no session storage para saber qual usuário está logado
+    sessionStorage.setItem("logado", email);
+    // levando para a tela de home
     window.location.assign('home.html');
 }
 
-
-document.querySelector("#entrar_conv").addEventListener("click", e=>{
+// Enviar email do footer
+document.querySelector("#entrar_conv").addEventListener("click", () =>{
     window.location.assign('home.html');
 })

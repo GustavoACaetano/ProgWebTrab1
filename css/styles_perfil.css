@@ -1,0 +1,20 @@
+#semfoto {
+    display: flex;
+    flex-direction: row;
+    height: 10rem;
+    width: auto;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+}
+
+.cadastro{
+    margin-left: 5px;
+}
+
+/* Section dos dados */
+/* .dados {
+
+} */

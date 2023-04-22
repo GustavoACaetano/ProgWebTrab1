@@ -15,43 +15,45 @@
     </header>
 
     <div class="div_cadastro">
-        <h1> Cadastro </h1>
-        <div class="formulario">
+        <h1> Cadastro </h1> <!-- Título pro formulário -->
+        <div class="formulario"> <!-- Div para estilizar o formulário -->
             <form> <!-- Criando fomulário de Cadastro -->
 
                 <!-- Nome do usuário -->
-                <div class="nome">
-                    <!-- <label for="nome"> Nome: </label>  -->
+                <div class="nome campos">
                     <input type="text" id="nome" name="nome_usuario" placeholder="Nome">
+                    <label class="erro" id="noNome">Nome deve ser preenchido!</label>
                 </div>
                 
                 <!-- E-mail do usuário -->
-                <div class="email">
-                    <!-- <label for="email">Email:</label> -->
+                <div class="email campos">
                     <input type="email" id="email" name="user_email" placeholder="E-mail">
+                    <label class="erro" id="noEmail">E-mail deve ser preenchido!</label>
                 </div>
-
                 
                 <!-- Idade do usuário -->
-                <div class="idade">
-                    <label for="idade">Data de Nascimento:</label>
+                <div class="idade campos">
+                    <label for="idade" id="labelData">Data de Nascimento:</label>
                     <input type="date" id="idade" name="idade_usuario">
+                    <label class="erro" id="noData">Data deve ser preenchida!</label>
                 </div> 
-
                 
                 <!-- Senha do usuário -->
-                <div class="senha">
-                    <!-- <label for="senha" class="td_label">Senha:</label> -->
+                <div class="senha campos">
                     <input type="password" id="senha" name="user_senha" placeholder="Senha">
+                    <label class="erro" id="noPass">Senha deve ser preenchida!</label>
+                    <label class="erro" id="aotPass">Senha deve ter 6 a 30 caracteres!</label>
                 </div>
                 
                 <!-- Confirmação de senha do usuário -->
-                <div class="confir_senha">
-                    <!-- <label for="confirmasenha" class="td_label">Confirma Senha:</label> -->
+                <div class="confir_senha campos">
                     <input type="password" id="confirmasenha" name="user_confirmasenha" placeholder="Confirma Senha">
+                    <label class="erro" id="noConfPass">Confirmar senha deve ser preenchida!</label>
+                    <label class="erro" id="aotConfPass">Confirmar senha deve ter 6 a 30 caracteres!</label>
+                    <label class="erro" id="passConfPass">Confirmar senha deve ser igual à senha!</label>
                 </div>
 
-                <div class="joga">
+                <div class="joga campos">
                     <div class="jogabilidade">
                         <!-- Grau de conhecimento -->
                         <label for="jogabilidade" class="label_joga">Jogador:</label>
@@ -62,7 +64,6 @@
                                 <input type="radio" id="Profissional" name="jogabilidade" class="bolaRadio">
                                 <label class="jogabilidades" for="Profissional"> Profissional </label>
                             </div>
-
 
                             <!-- Amador -->
                             <div class="radio amad">
@@ -75,12 +76,12 @@
                                 <input type="radio" id="Iniciante" name="jogabilidade" class="bolaRadio">
                                 <label class="jogabilidades" for="Iniciante"> Iniciante </label>
                             </div>
+                            <label class="erro" id="noJogabilidade">Nível de experiência deve ser escolhido!</label>
                         </div>
-
                     </div>
                 </div>
             </form>
-            <button id="cadastro"> CADASTRAR </button> 
+            <button id="cadastro"> CADASTRAR </button> <!-- Botão de enviar fora do form para não resetar a página ao clicar -->
         </div>
     </div>
 </body>
