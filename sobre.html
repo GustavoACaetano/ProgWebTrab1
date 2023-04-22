@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/x-icon" href="/logos/icon2.png">
+	<link rel="icon" type="image/x-icon" href="logos/icon2.png">
     <title>Time In</title>
     <link rel="stylesheet" href="css/styles_base.css">
+	<link rel="stylesheet" href="css/styles_sobre.css">
+	<script src="js/script_sobre.js" type="module" defer></script>
 </head>
 <body>
     <header class="header" >
-		<a href="home.html"><img src="logos/1.png" alt="" id = "logo"> </a>
+		<a href="home.html"><img src="logos/1.png" alt="" id ="logo"> </a>
 		
 		<nav class="menu">
 			<li><a href="pesquisa.html">Pesquisar</a></li>
@@ -19,38 +21,141 @@
 			<li><a href="sobre.html">Sobre</a></li>
 		</nav>
 	</header>
+	<div id="sobre">
+		<h1>Sobre nós</h1>
+		<p>
+			Somos uma equipe dedicada e apaixonada por esportes, e criamos esta plataforma para ajudar os organizadores de eventos e os participantes 
+			a se conectarem de forma fácil e eficiente. Nosso objetivo é tornar a participação em eventos esportivos o mais fácil e acessível possível.
+			Para isso, oferecemos uma variedade de ferramentas que ajudam a organizar e promover eventos, além de permitir que os participantes
+			encontrem e se inscrevam para eventos em todo o país. Nós trabalhamos com organizadores de eventos esportivos de diferentes modalidades, desde 
+			corridas de rua até competições de ciclismo, para garantir que nossa plataforma atenda às necessidades de todos os tipos de eventos.
+			Nós nos esforçamos para oferecer uma experiência online sem complicações para todos os nossos usuários. Através de nossa interface intuitiva, 
+			os organizadores de eventos podem criar e gerenciar seus eventos com facilidade, enquanto os participantes podem encontrar e se inscrever para
+			eventos com apenas alguns cliques. Além disso, nossa equipe de suporte está sempre pronta para ajudar em caso de quaisquer problemas ou dúvidas.
+			Queremos garantir que todos os nossos usuários tenham uma experiência positiva em nosso site de eventos esportivos. Obrigado por escolher o nosso
+			site como sua plataforma de eventos esportivos preferida. Estamos ansiosos para ajudá-lo a descobrir novos eventos emocionantes e apoiá-lo em sua
+			jornada esportiva.
+		</p>
+	</div>
+	
+		
+	<h2 class="h2_equipe">Equipe</h2>
 
-	<h1>Sobre nós</h1>
-	<p>
-		Somos uma equipe dedicada e apaixonada por esportes, e criamos esta plataforma para ajudar os organizadores de eventos e os participantes 
-		a se conectarem de forma fácil e eficiente. Nosso objetivo é tornar a participação em eventos esportivos o mais fácil e acessível possível.
-		Para isso, oferecemos uma variedade de ferramentas que ajudam a organizar e promover eventos, além de permitir que os participantes
-		encontrem e se inscrevam para eventos em todo o país. Nós trabalhamos com organizadores de eventos esportivos de diferentes modalidades, desde 
-		corridas de rua até competições de ciclismo, para garantir que nossa plataforma atenda às necessidades de todos os tipos de eventos.
-		Nós nos esforçamos para oferecer uma experiência online sem complicações para todos os nossos usuários. Através de nossa interface intuitiva, 
-		os organizadores de eventos podem criar e gerenciar seus eventos com facilidade, enquanto os participantes podem encontrar e se inscrever para
-		eventos com apenas alguns cliques.Além disso, nossa equipe de suporte está sempre pronta para ajudar em caso de quaisquer problemas ou dúvidas.
-		Queremos garantir que todos os nossos usuários tenham uma experiência positiva em nosso site de eventos esportivos. Obrigado por escolher o nosso
-		site como sua plataforma de eventos esportivos preferida. Estamos ansiosos para ajudá-lo a descobrir novos eventos emocionantes e apoiá-lo em sua
-		jornada esportiva.
-	</p>
+	<div class="integrantes">
+		<!-- Div Fellipy -->
+		<div class="pessoas div_fellipy">
+			 <!-- h3 com nome do integrante -->
+			<h3>Fellipy Silva Pereira</h3>
+			<!-- Foto do integrante -->
+			<img src="img/pi.png">
+			<!-- Span que inclui a imagem do instagram e o link puxando para o instagram de cada integrante  -->
+			<span class="span_integrantes">
+				<img src="img/insta.png" id="icone">
+				<a href="https://www.instagram.com/fellipy_wagmacker/" target="_blank" id="textos">fellipy_wagmacker</a>
+			</span>
+			<p>Solteiro</p>
+		</div>
 
-	<h2>Equipe</h2>
-	<h3>Fellipy Silva Pereira </h3>
-	<img src="img/pi.png">
-	<p>Solteiro</p>
 
-	<h3>Gustavo Alves Caetano </h3>
-	<img src="img/gu.png">
-	<p>Programação por amor $$</p>
+		<div class="pessoas div_gustavo">
+			<h3>Gustavo Alves Caetano </h3>
+			<img src="img/gu.png">
 
-	<h3>João Pedro Zamborlini Barcellos </h3>
-	<img src="img/jp.png">
-	<p>Mesma coisa que o Gustavo</p>
+			<span class="span_integrantes">
+				<img src="img/insta.png" id="icone">
+				<a href="https://www.instagram.com/gustavo.alcaetano/" target="_blank" id="textos">gustavo.alcaetano</a>
+			</span>
 
-	<h3>Pedro Ramos Leite Soares </h3>
-	<img src="img/pe.png">
-	<p>O contrário do Fellipy</p>
+			<p>Programação por $$amor$$</p>
+		</div>
+		 
+		<div class="pessoas div_Barcellos">
+			<h3>João Pedro Zamborlini Barcellos </h3>
+			<img src="img/jp.png">
+
+			<span class="span_integrantes">
+				<img src="img/insta.png" id="icone">
+				<a href="https://www.instagram.com/jp_barc/" target="_blank" id="textos">jp_barc</a>
+			</span>
+
+			<p>Mesma coisa que o Gustavo</p>	
+		</div>
+
+
+		
+		<div class="pessoas div_Pedro">
+			<h3>Pedro Ramos Leite Soares</h3>
+			<img src="img/pe.png">
+
+			<span class="span_integrantes">
+				<img src="img/insta.png" id="icone">
+				<a href="https://www.instagram.com/pedrorls_/" target="_blank" id="textos">pedrorls_</a>
+			</span>
+
+			<p>O contrário do Fellipy</p>
+		</div>
+	</div>
+
+<main></main>
+<footer>
+	<div id="footer-content">
+		<div id="footer_contacts">
+			<img src="logos/1.png" id="foot"></img>
+			<p>Always in movement</p>
+
+			<div id="footer_social_media">
+				<a href="https://www.instagram.com/timein.aim/" target="_blank" class="footer-link" id="instagram">
+					<img class="icone" src="img/insta2.png">  
+				</a>
+
+				<a href="https://www.facebook.com/profile.php?id=100091952533773" target="_blank" class="footer-link" id="facebook">
+					<img class="icone" src="img/face.png">
+				</a>
+
+				<a href="https://twitter.com/TimeIn2000" target="_blank" class="footer-link" id="whatsapp">
+					<img class="icone" src="img/twitter.png">
+				</a>
+			</div>
+
+		
+		</div>
+		<ul class="footer-list">
+			<li>
+				<h3>Nossos Chefes</h3>
+			</li>
+			<li>
+				<a href="http://lattes.cnpq.br/0059221043399777" target="_blank" class="footer-link">Moises Savedra Omena
+				</a>
+			</li>
+			<li>
+				<a href="http://lattes.cnpq.br/5449301218431564" target="_blank" class="footer-link">Daniel Ribeiro Trindade
+				</a>
+			</li>
+			<li>
+				<a href="http://lattes.cnpq.br/1403241645360917" target="_blank" class="footer-link">Felipe Frechiani de Oliveira
+				</a>
+			</li>
+			<li>
+				<a href="http://lattes.cnpq.br/3770740577508464 " target="_blank" class="footer-link">Marta Talitha Carvalho Freire Mendes</a>
+			</li>
+		</ul>
+		<div id="footer_subscribe">
+			<h3>Para se manter atualizado</h3>
+			<p>Insira seu email</p>
+			<div id="input_group">
+				<input type="email" id="email" placeholder="E-mail">
+				<button id="enviarEmail">
+					<img class="icone" src="img/enviar.png">
+				</button>
+			</div>
+		</div>
+<!-- "https://www.google.com/maps/place/Ifes+-+Campus+Serra/@-20.1975613,-40.2193013,17z/data=!3m1!4b1!4m6!3m5!1s0xb81de52407d8d7:0x289693da8d05dd09!8m2!3d-20.1975613!4d-40.2171126!16s%2Fg%2F11gyc3xq80">
+Av. dos Sabiás, 330 - Morada de Laranjeiras, Serra - ES, 29166-630 -->
+	</div>
+	<div id="copyright">
+		&#169
+		2023 all rights reserved
+	</div>
+</footer>
 </body>
-<footer><br></footer>
 </html>

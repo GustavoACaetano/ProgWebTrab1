@@ -4,63 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time in</title> <!-- Título da Página -->
-    <link rel="stylesheet" href="styles_cadastro.css"> <!-- Link da página css -->
+	<link rel="icon" type="image/x-icon" href="logos/icon2.png">
+    <title>Time In</title> <!-- Título da Página -->
+    <link rel="stylesheet" href="css/styles_cadastro.css"> <!-- Link da página css -->  
+    <script src="js/script_cadastro.js" defer></script>
 </head>
 <body>
+    <header>
+        <a href="login.html"> <img src="logos/1.png"> </a>
+    </header>
+
     <div class="div_cadastro">
-        <form action="" method="post"> <!-- Criando fomulário de Cadastro -->
+        <h1> Cadastro </h1>
+        <div class="formulario">
+            <form> <!-- Criando fomulário de Cadastro -->
 
-            <!-- Nome do usuário -->
-            <div class="nome">
-                <label for="nome"> Nome: </label> 
-                <input type="text" id="nome" name="evento" placeholder="Nome" required>
-            </div>
-            
-            <!-- E-mail do usuário -->
-            <div class="email">
-                <label for="email" class="td_label">Email:</label>
-                <input type="email" id="email" name="user_email" placeholder="E-mail" required>
-            </div>
+                <!-- Nome do usuário -->
+                <div class="nome">
+                    <!-- <label for="nome"> Nome: </label>  -->
+                    <input type="text" id="nome" name="nome_usuario" placeholder="Nome">
+                </div>
+                
+                <!-- E-mail do usuário -->
+                <div class="email">
+                    <!-- <label for="email">Email:</label> -->
+                    <input type="email" id="email" name="user_email" placeholder="E-mail">
+                </div>
 
-            
-            <!-- Idade do usuário -->
-            <div class="idade">
-                <label for="idade" class="td_label">Idade:</label>
-                <input type="date" id="idade" name="idade_usuario"  required>
-            </div> 
+                
+                <!-- Idade do usuário -->
+                <div class="idade">
+                    <label for="idade">Data de Nascimento:</label>
+                    <input type="date" id="idade" name="idade_usuario">
+                </div> 
 
-            
-            <!-- Senha do usuário -->
-            <div class="senha">
-                <label for="senha" class="td_label">Senha:</label>
-                <input type="password" id="senha" name="user_senha" placeholder="Senha" required>
-            </div>
-            
-            <!-- Confirmação de senha do usuário -->
-            <div class="confir_senha">
-                <label for="confirmasenha" class="td_label">Confirma Senha</label>
-                <input type="password" id="confirmasenha" name="user_confirmasenha" placeholder="Confirma Senha" required>
-            </div>
+                
+                <!-- Senha do usuário -->
+                <div class="senha">
+                    <!-- <label for="senha" class="td_label">Senha:</label> -->
+                    <input type="password" id="senha" name="user_senha" placeholder="Senha">
+                </div>
+                
+                <!-- Confirmação de senha do usuário -->
+                <div class="confir_senha">
+                    <!-- <label for="confirmasenha" class="td_label">Confirma Senha:</label> -->
+                    <input type="password" id="confirmasenha" name="user_confirmasenha" placeholder="Confirma Senha">
+                </div>
 
-            <div class="joga">
-            <!-- Grau de conhecimento -->
-                <label for="jogabilidade" class="label_joga">...</label>
+                <div class="joga">
+                    <div class="jogabilidade">
+                        <!-- Grau de conhecimento -->
+                        <label for="jogabilidade" class="label_joga">Jogador:</label>
 
-                <!-- Profissional -->
-                <input type="radio" id="profissional" name="profissa">
-                <label for="profissa"> Profissional </label>
+                        <div class="radios">
+                            <!-- Profissional-->
+                            <div class="radio profissa">
+                                <input type="radio" id="Profissional" name="jogabilidade" class="bolaRadio">
+                                <label class="jogabilidades" for="Profissional"> Profissional </label>
+                            </div>
 
-                <!-- Amador -->
-                <input type="radio" id="Amador" name="amad">
-                <label for="amad"> Amador: </label>
 
-                <input type="radio" id="Iniciante" name="inic">
-                <label type="radio" for="inic"> Iniciante </label>
-            </div>
-            
-            <button type="submit"> ENVIAR DADOS </button> 
-        </form>
+                            <!-- Amador -->
+                            <div class="radio amad">
+                                <input type="radio" id="Amador" name="jogabilidade" class="bolaRadio">
+                                <label class="jogabilidades" for="Amador"> Amador </label>               
+                            </div>
+
+                            <!--Iniciante -->
+                            <div class="radio inic">
+                                <input type="radio" id="Iniciante" name="jogabilidade" class="bolaRadio">
+                                <label class="jogabilidades" for="Iniciante"> Iniciante </label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+            <button id="cadastro"> CADASTRAR </button> 
+        </div>
     </div>
 </body>
 </html>

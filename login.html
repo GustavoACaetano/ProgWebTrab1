@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time in</title>
+    <link rel="stylesheet" href="css/styles_login.css">
+    <script src="js/script_valida_login.js" defer></script>
+</head>
+<body>
+    
+    <header>
+        <a href="login.html"> <img src="logos/1.png"> </a>
+    </header>
+
+    <div class="divLogin">
+        <h1> Login </h1>
+        <form id="form">
+            <!-- action="perfil.html" method="post" -->
+            <!-- Nome usuário -->
+            <div class="email">
+                <input type="email" id="email_usuario" placeholder="E-mail">
+                <label class="erro" id="noEmail">Usuário deve ser preenchido!</label>
+            </div>
+
+            <!-- Senha usuário -->
+            <div class="senha">
+                <input type="password" id="senha_usuario" placeholder="Senha">
+                <label class="erro" id="noPass">Senha deve ser preenchida!</label>
+                <label class="erro" id="aotPass">Senha deve ter 6 a 30 caracteres</label>
+
+                <a href="esqueci_senha.html"> Esqueci minha senha </a><br>
+                <a href="cadastro.html"> Não possui uma conta? </a>
+            </div>
+
+            
+        </form>
+            <div class="log">
+                <button id="btnEnviar">Entrar</button>
+                <button id="entrar_conv"> Entrar como convidado </button> 
+            </div> 
+    </div>
+</body>
+</html>

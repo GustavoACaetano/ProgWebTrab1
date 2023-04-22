@@ -1,48 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+/* 
+:root {
+  font-family: "EB Garamond", serif;
 
-body,
-ul,
-li,
-p {
-	
-		margin: 0px;
-		padding: 0 px;
-		list-style: none;
-		font-size: 1.2rem;
-		font-family: Arial;
+  color: rgba(255, 255, 255, 0.87);
 
-}
-a{
-	text-decoration: none;
-	color: green;
-}
-.header{
-	/*Fica o menu do lado do logo - modo default rows*/
-	display: flex;
-	
-	/*espaço entre o logo e o menu*/
-	
-	justify-content:space-between;
-	padding:20px;
-	/*logo fica alinhado com o menu*/
-	align-items: center;
-	
-	/*Quando a tela for bem pequena o menu quebra, mas o logo continua em cima*/
-	background: #d5f4e6;
-	
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+} 
+
+*/
+
+* {
+  margin: 0;
 }
 
-.menu{
-	display: flex;
-	
+ul {
+  list-style: none;
 }
 
-.menu li{
-	margin-left:20px;
+.container {
+  width: 1500px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  justify-content: center;
+  min-height: 100vh;
+  border-radius: 10px;
 }
 
-body{
-	background: #F5FFFA;
-	}
-img{
-	width: 150px;
+.item:hover {
+  cursor: pointer;
+}
+
+.titulo {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 50px;
+}
+
+.item p {
+  font-size: 30px;
+  padding: 0px 20px 20px 20px;
+  transition: opacity 200ms ease-out, height 400ms ease-out;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.item-active p {
+  visibility: visible;
+  height: 520px;
+  opacity: 0.8;
+}
+
+.conteudo{
+  display: none;
+  color: #000000;
+  width: 70%;
+}
+
+.pergunta{
+  width: 70%;
+  color: #000000;
+}
+
+.prim{
+  border-radius: 10px 10px 1px 1px;
+  background-color: #145374;
+  
+}
+
+.seg{
+  border-radius: 1px 1px 10px 10px;
+  background-color: #1877f2
+}
+
+#conteudo2{
+  border-radius: 1px 1px 10px 10px;
+  background-color: #057dc2;
+}
+
+#conteudo1{
+  background-color: #83e3cd;
 }

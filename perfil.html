@@ -4,21 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/x-icon" href="/logos/icon2.png">
+	<link rel="icon" type="image/x-icon" href="logos/icon2.png">
     <title>Time In</title>
     <link rel="stylesheet" href="css/styles_base.css">
+	<link rel="stylesheet" href="css/styles_perfil.css">
+	<script src="js/script_perfil.js" type="module" defer></script>
 </head>
 <body>
     <header class="header" >
 		<a href="home.html"><img src="logos/1.png" alt="" id = "logo"> </a>
 		
 		<nav class="menu">
-			<li><a href="pesquisa.html">Pesquisar</a></li>
+			<li><a href="pesquisa.html">Pesquisar</a></li> 
 			<li><a href="perfil.html">Perfil</a></li>
 			<li><a href="ajuda.html">Ajuda</a></li>
 			<li><a href="sobre.html">Sobre</a></li>
 		</nav>
 	</header>
+	
+	<img src="img/9.png" alt="Foto de Perfil">
+	<Label id="nome_usuario"></Label>
+	<br>
+	<label id="e-mail"></label>
+	<br>
+	<!-- Falta a data de nascimento -->
 
-</body>
+	
+	<main></main>
+	<footer>
+		<div id="footer-content">
+			<div id="footer_contacts">
+				<img src="logos/1.png" id="foot"></img>
+				<p>Always in movement</p>
+	
+				<div id="footer_social_media">
+					<a href="https://www.instagram.com/timein.aim/" target="_blank" class="footer-link" id="instagram">
+						<img class="icone" src="img/insta2.png">  
+					</a>
+	
+					<a href="https://www.facebook.com/profile.php?id=100091952533773" target="_blank" class="footer-link" id="facebook">
+						<img class="icone" src="img/face.png">
+					</a>
+	
+					<a href="https://twitter.com/TimeIn2000" target="_blank" class="footer-link" id="whatsapp">
+						<img class="icone" src="img/twitter.png">
+					</a>
+				</div>
+	
+			
+			</div>
+			<ul class="footer-list">
+				<li>
+					<h3>Nossos Chefes</h3>
+				</li>
+				<li>
+					<a href="http://lattes.cnpq.br/0059221043399777" target="_blank" class="footer-link">Moises Savedra Omena
+					</a>
+				</li>
+				<li>
+					<a href="http://lattes.cnpq.br/5449301218431564" target="_blank" class="footer-link">Daniel Ribeiro Trindade
+					</a>
+				</li>
+				<li>
+					<a href="http://lattes.cnpq.br/1403241645360917" target="_blank" class="footer-link">Felipe Frechiani de Oliveira
+					</a>
+				</li>
+				<li>
+					<a href="http://lattes.cnpq.br/3770740577508464 " target="_blank" class="footer-link">Marta Talitha Carvalho Freire Mendes</a>
+				</li>
+			</ul>
+			<div id="footer_subscribe">
+				<h3>Para se manter atualizado</h3>
+				<p>Insira seu email</p>
+				<div id="input_group">
+					<input type="email" id="email" placeholder="E-mail">
+					<button id="enviarEmail">
+						<img class="icone" src="img/enviar.png">
+					</button>
+				</div>
+			</div>
+	<!-- "https://www.google.com/maps/place/Ifes+-+Campus+Serra/@-20.1975613,-40.2193013,17z/data=!3m1!4b1!4m6!3m5!1s0xb81de52407d8d7:0x289693da8d05dd09!8m2!3d-20.1975613!4d-40.2171126!16s%2Fg%2F11gyc3xq80">
+	Av. dos Sabiás, 330 - Morada de Laranjeiras, Serra - ES, 29166-630 -->
+		</div>
+		<div id="copyright">
+			&#169
+			2023 all rights reserved
+		</div>
+	</footer>
 </html>

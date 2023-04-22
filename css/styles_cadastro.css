@@ -1,59 +1,110 @@
-@import url(`https://fonts.googleapis.com/css2?family=Nunito&display=swap`);
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Quicksand:wght@600&display=swap');
 
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Quicksand', sans-serif;
 }
 
 body{
     font-family: 'Nunito', sans-serif;
+    background: linear-gradient(to top right, #057dc2, #83e3cd);
 }
 
 .div_cadastro{
-    width: 50vh;
-    height: 80vh;
-    background-color: rgb(0, 102, 128);
+    min-height: 60%;
+    width: 27%;
+    background-color: rgb(255, 255, 255);
     margin: 0 auto;
-    margin-top: 15vh;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    border-radius: 10px; 
+    box-shadow: 
+    -1px -2px 25px 8px #000000;
 }
 
-form{
-    margin: 25px;
+.formulario{
+    margin: 30px;
     display: flex;
     flex-direction: column;
-    padding-top: 15px;
-}
-
-form label{
+    padding-top: 20px;
     font-size: 20px;
 }
 
-form input{
-    margin-top: 5px;
-    margin-bottom: 15px;
-    padding: 12px;
-    width: 42.5vh;
+form .nome{
+    display: flex;
+    flex-direction: column;
+}
+
+label[for="nome"],
+label[for="email"],
+label[for="senha"],
+label[for="idade"],
+label[for="confirmasenha"]{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2px;
+    margin-bottom: 3px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"]{
+    padding: 3%;
+    font-size: 18px;
+    width: 94%;
+    margin-bottom: 5.5%;
+    border: 1px solid black;
     outline: 0;
-    border: 0;
-    box-shadow: 0 1px 0	#4d4d4d;
-    font-size: 20px;
-    font-family: 'Nunito', sans-serif;
+}
+
+div[class="jogabilidade"],
+div[class="profissa"],
+div[class="amad"],
+div[class="inic"]{
+    margin-bottom: 3%;
+}
+
+button{
+    margin-top: 25px;
+    margin-bottom: 10%;
+    padding: 11px;
+    cursor: pointer;
+    border: 1px solid black;    
+    background-color: #057dc2;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+a{
+    font-size: 15px;
+    color: blue;
+    margin-top: 5px;
+}
+
+
+h1{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: 35px;
 }
 
-.joga{
-    display: flex;
-
+img{
+    position: absolute;
+    width: 23%;
+    height: 23%;
+    left: 30px;
+    top: 10px;
 }
 
-.joga label{
-    padding-top: 0;
 
+header{
+    height: 10%;
 }
-
-.joga input{
-    display: flex;
-    
-}
-
