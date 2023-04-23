@@ -2,51 +2,50 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
 
-body,
-ul,
-li,
-p {
+
+/* Aplicando margem, fonte e tirando style das listas */
+body,ul,li,p {
 		margin: 0px;
 		list-style: none;
 		font-size: 1.2rem;
 		font-family: Arial;
 }
 
-li,
-a{
+
+/* Aplicando cor e tirando decoração dos textos */
+li,a{
 	text-decoration: none;
 	color: rgb(255, 255, 255);
 }
 
+
+/* Aplicando cor */
 .desc p{
 	color: #ffffff;
 }
 
 
-
+/* Aplicando tamanho, borda e margem */
 .icone{
 	width: 24px;
 	border-radius: 5px 5px 5px 5px;
 	margin-bottom: 9px;
 }
 
+
+/* Aplicando flexbox,  alinhamento e cor*/
 .header{
-	/*Fica o menu do lado do logo */
 	display: flex;
-	
 	height: 100px;
-	
 	justify-content:space-between;
 	padding:20px;
-
-	/*logo fica alinhado com o menu*/
 	align-items: center;
-	
-	/*Quando a tela for bem pequena o menu quebra, mas o logo continua em cima*/
 	background: linear-gradient(to bottom right, #057dc2, #83e3cd);
 	
 }
 
+
+/* Aplicando tamanho, borda e margem */
 #logo{
     width: 150px;
 	padding-top: 20px;
@@ -54,22 +53,29 @@ a{
   	margin-bottom: 10px;
 }
 
+
+/* Aplicando flexbox */
 .menu{
 	display: flex;
 	padding-top: 10px;
 }
 
+
+/* Aplicando margem */
 .menu li{
 	margin-left:20px;
 }
 
 
+/* Aplicando cor */
 #textos{
 	color: black;
 }
 
 
-/* Parte do footer */
+
+
+/* Aplicando fonte, cor, tamanho e espaçamento*/
 footer{
 	font-family: 'Inter', sans-serif;
 	box-sizing: border-box;
@@ -78,10 +84,14 @@ footer{
 	color:rgb(255, 255, 255)
 }
 
+
+/* Aplicando altura */
 main{
 	height: 30vh;
 }
 
+
+/* Aplicando cor, display, número de colunas e espaçamento */
 #footer-content{
 	background-color: #057dc2;
 	display: grid;
@@ -90,10 +100,14 @@ main{
 	padding-top: 20px;	
 }
 
+
+/* Aplicando espaçamento */
 #footer_contacts{
 	padding-right: 1px;
 }
 
+
+/* Aplicando flexbox e margem */
 #footer_social_media{
 	display: flex;
 	gap: 2rem;
@@ -101,6 +115,8 @@ main{
 	
 }
 
+
+/* Aplicando cor, tamnho e borda */
 #footer_social_media .footer-link{
 	height: 2.5rem;
 	width: 2.5rem;
@@ -109,6 +125,8 @@ main{
 	border-radius: 5px;
 }
 
+
+/* Aplicando cor e flexbox */
 #instagram{
 	background: linear-gradient(#7f37c9, #ff2992, #ff9807);
 	display: flex;
@@ -116,12 +134,17 @@ main{
 	align-items: end;
 }
 
+
+/* Aplicando cor e flexbox */
 #facebook{
 	background-color: #1877f2;
 	display: flex;
 	justify-content: center;
 	align-items: end;
 }
+
+
+/* Aplicando cor e flexbox */
 #whatsapp{
 	background-color: #1da1f2;
 	display: flex;
@@ -129,6 +152,8 @@ main{
 	align-items: end;
 }
 
+
+/* Aplicando  flexbox, tamanho e tirando style da lista */
 .footer-list{
 	display: flex;
 	flex-direction: column;
@@ -136,16 +161,22 @@ main{
 	list-style: none;
 }
 
+
+/* Aplicando cor */
 .footer-list .footer-link:hover{
 	color: #7f37c9;
 }
 
+
+/* Aplicando flexbox e tamanho */
 #footer_subscribe{
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
 }
 
+
+/* Aplicando flexbox, cor e borda */
 #input_group{
 	display: flex;
 	align-items: center;
@@ -153,6 +184,8 @@ main{
 	border-radius: 5px;
 }
 
+
+/* cor, tamanho, espaçamento e colocando propriedades com valor padrão */
 #input_group input{
 	all: unset;
 	padding: 0.75rem;
@@ -160,6 +193,8 @@ main{
 	color: black;
 }
 
+
+/* Aplicando cor, borda, fonte e cursor */
 #input_group button{
 	background-color: #4267b3 ;
 	border: none;
@@ -171,10 +206,13 @@ main{
 	cursor: pointer;
 }
 
+
+/* Aplicando opacidade */
 #input_group button:hover{
 	opacity: 0.8;
 }
 
+/* aplico cor de fundo, dou as configurações do texto e espacamento */
 #copyright{
 	display: flex;
 	justify-content: center;
@@ -186,6 +224,7 @@ main{
 }
 
 
+/* Aplicando tamano e espaçamento */
 #foot{
 	width: 25%;
 	padding: 8%;
@@ -195,32 +234,40 @@ main{
 }
 
 
+/* Aplicando tamanho */
 .imgEventos{
-    width: 320px;
-    height: 185px;
+    width: 400px;
+    height: 225px;
+	border-radius: 5px;
 	
 }
 
+
+/* Aplicando fonte e margem */
 .pTitulo{
     font-style: oblique;
 	font-size: 25px;
 	margin-bottom: 15px;
 }
 
+
+/* Aplicando flexbox, tamanho, borda, cor e sombra */
 .evento{
     display: flex;
 	justify-content: center;
 	align-items: center;
     padding: 1%;
-    margin-left: 5%;
+    margin-left: 2%;
     margin-top: 2%;
-    width: 55%;
+    width: 60%;
     border: 0;
     border-radius: 10px; 
     box-shadow: 0 3px 5px 5px rgba(131, 131, 131, 0.46);
-	background-color: #057dc2;
+	background: linear-gradient(55deg,#83e3cd, #057dc2, #83e3cd);
 }
 
+
+/* Aplicando flexbox */
 .conteudo{
   display: flex;
   justify-content: center;
@@ -228,19 +275,23 @@ main{
   flex-direction: column;
 }
 
+/* aplico um display flex entre a imagem e as informacoes de um evento */
 .informacoes{
   display: flex;
   flex-direction: row;
 }
 
 
+/* Aplicando flexbox e margens */
 .desc{
   display: flex;
   flex-direction: column;
-  margin-bottom: 4px;
+  margin-bottom: 0px;
   margin-left: 7px;
 }
 
+
+/* Definindo tamanho, cor, fonte, borda e posição */
 .inscrever{
   width: 100px; 
   color: white;
@@ -253,34 +304,43 @@ main{
   margin-left: 20px;
 }
 
+/* mudo o cursor para pointer ao passar o mouse no botao inscrever-se */
 .inscrever:hover{
 	cursor: pointer;
 }
 
+
+/* Defininfo margem */
 .data_hora{
 	margin-bottom: 3.5%;
 }
 
+
+/* Defininfo margem */
 .ende{
-	margin-bottom: 5%;
+	margin-bottom: 0;
 }
 
+/* aplico um flex entre o valor do evento e o botao de inscrever-se */ 
 .btn_des{
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
+	justify-content: space-between;
+	align-items: end;
+	margin-top: auto;
 }
 
+
+/* Aplicando tamanho, cor, cursor, posição e borda */
 .btn_des button{
-  width: 100px; 
-  color: white;
-  font-size: 15px;
-  border: 0.5px solid #333333;
-  border-radius: 10px;
-  background-color: #32afb5;
-  height: 30px;
-  left: 700px;
-  margin-left: 20px;
-  cursor: pointer;
+	width: 100px; 
+	color: white;
+	font-size: 15px;
+	border: 0.5px solid #333333;
+	border-radius: 10px;
+	background-color: #32afb5;
+	height: 50px;  
+	left: 700px;
+	margin-left: 20px;
+	cursor: pointer;
 }

@@ -1,20 +1,38 @@
 #semfoto {
-    display: flex;
-    flex-direction: row;
-    height: 10rem;
+    height: 8rem;
     width: auto;
+    padding-left: 4%;
+    padding-top: 3%;
+
 }
 
-.info {
+.dados {
+    margin-left: 5%;
+    padding-top: 9%;
+
+} 
+
+
+#perfil{
+    margin: auto;
+    margin-top: 40px;
+    height: 300px;
+    width: 600px;
+    border: solid 0px #000000;
+    border-radius: 12px;
+    box-shadow: inset 0 0 0.5em rgb(90, 90, 90), 0 0 1em rgb(90, 90, 90);
+}
+
+
+.fot_desc{
     display: flex;
     flex-direction: row;
+    padding-bottom: 25px;
 }
 
-.cadastro{
-    margin-left: 5px;
+#email{
+    padding-left: 40px;
 }
 
-/* Section dos dados */
-/* .dados {
+/* Section dos dados  */
 
-} */

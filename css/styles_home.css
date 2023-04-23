@@ -1,6 +1,8 @@
-* {box-sizing:border-box}
+/* Aplicando dimensão nula */
+* {
+  box-sizing:border-box}
 
-/* Container do slide aparente */
+/* Aplicando tamanhos e margem*/
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -8,17 +10,18 @@
   
 }
 
-/* Hide the images by default */
+/* Aplicando display*/
 .mySlides {
   display: none;
 }
  
+/* Aplicando tamanho e borda */
 .exposicao{
   width: 100%;
   border-radius: 5px;
 } 
 
-/* Next & previous buttons */
+/* Aplicando cursor, posição, posição, tamanho, margem, cor, fonte, borda, transição e uma limitação de seleção*/
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -34,23 +37,25 @@
   user-select: none;
 }
 
-/* Position the "next button" to the right */
+/* Aplicando posição e borda*/
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
+
+/* Aplicando posição e borda */
 .prev {
   left: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* Aplicando cor */
 .prev:hover, .next:hover {
   background-color: #32afb5;
 }
 
-/* Caption text */
+/* Aplicando cor, fonte, tamanho e alinhamento */
 .text {
   color: #ffffff;
   font-size: 15px;
@@ -61,6 +66,8 @@
   text-align: left;
 }
 
+
+/* Aplicando cor, posição e fonte */
 .titul{
   color: rgb(255, 255, 255);
   position: absolute;
@@ -70,6 +77,8 @@
   text-shadow: black 0.1em 0.1em 0.2em
 }
 
+
+/* Aplicando display, tamanho, posição, cor, borda e transição */
 .fundoTexto{ 
   display: none;
   width: 100%;
@@ -84,11 +93,12 @@
   transition: opacity 0.6s ease;
 }
 
+/* Definindo a opacidade como 1 */
 .fundoTexto:hover {
   opacity: 1;
 }
 
-/* The dots/bullets/indicators */
+/* Definindo cursor, tamanho, margem, cor, borda e display*/
 .dot {
   cursor: pointer;
   height: 15px;
@@ -99,6 +109,8 @@
   display: inline-block;
 }
 
+
+/* Definindo cor */
 .active, .dot:hover {
   background-color: #717171;
 }
@@ -109,11 +121,15 @@
   animation-duration: 1.5s;
 }
 
+
+/* Define que o elemento animado deve ter uma opacidade de 0.4 em "from" e opacidade 1 em "to" */
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
 }
 
+
+/* Definindo posição e cursor */
 .slide {
   position: absolute;
   left: 87%;
@@ -122,6 +138,7 @@
   
 }
 
+/* Aplicando fonte e espaçamentos */
 #principaisEventos {
   padding-left: 2%;
   font-size: 45px;

@@ -19,6 +19,7 @@ btn.addEventListener("click", () =>{
     const passConfPass = document.querySelector("#passConfPass");
     const aotPass = document.querySelector("#aotPass");
     const aotConfPass = document.querySelector("#aotConfPass");
+    const noEmailPadrao = document.querySelector("#noEmailPadrao");
 
     // Campo de nome
     const campoNome = document.querySelector("#nome");
@@ -55,19 +56,19 @@ btn.addEventListener("click", () =>{
     const radios = document.querySelectorAll(".radio");
     
     radios.forEach(radio => {
-        if(radio.children[0].checked == true){
+        if (radio.children[0].checked == true){
             marcado = radio.children[0].id;
         }
     })
 
     // Autenticando o nome
-    if(campoNome.value == ""){
+    if (campoNome.value == ""){
         // Mudando as cores e visualização das caixas de texto
         campoNome.style.cssText = 'border: 2px solid #f58181';
         noNome.style.display = "block";
         // Variável de verificação
         autenticaNome = false;
-    }else{
+    } else {
         // Mudando as cores e visualização das caixas de texto
         campoNome.style.cssText = 'border: 2px solid rgb(95, 201, 74)';
         noNome.style.display = "none";
@@ -76,16 +77,22 @@ btn.addEventListener("click", () =>{
     }
 
     // Autenticando o email
-    if(campoEmail.value == ""){
+    if (campoEmail.value == ""){
         // Mudando as cores e visualização das caixas de texto
         campoEmail.style.cssText = 'border: 2px solid #f58181';
         noEmail.style.display = "block";
+        noEmailPadrao.style.display = "none";
         // Variável de verificação
         autenticaEmail = false;
-    }else{
+    } else if (!campoEmail.value.includes("@") || !campoEmail.value.includes(".com")){
+        campoEmail.style.cssText = 'border: 2px solid #f58181';
+        noEmail.style.display = "none";
+        noEmailPadrao.style.display = "block";
+    } else {
         // Mudando as cores e visualização das caixas de texto
         campoEmail.style.cssText = 'border: 2px solid rgb(95, 201, 74)';
         noEmail.style.display = "none";
+        noEmailPadrao.style.display = "none";
         // Variável de verificação
         autenticaEmail = true;
     }

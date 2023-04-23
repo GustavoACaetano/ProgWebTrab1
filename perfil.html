@@ -11,10 +11,10 @@
 	<script src="js/script_perfil.js" type="module" defer></script>
 </head>
 <body>
-    <header class="header" >
-		<a href="home.html"><img src="logos/1.png" alt="" id = "logo"> </a>
+    <header class="header" > <!-- Header com navbar levando para outras páginas -->
+		<a href="home.html"><img src="logos/1.png" alt="" id = "logo"> </a><!-- Imagem dentro de um link -->
 		
-		<nav class="menu">
+		<nav class="menu"><!-- Nav com os links para outras páginas -->
 			<li><a href="pesquisa.html">Pesquisar</a></li> 
 			<li><a href="perfil.html">Perfil</a></li>
 			<li><a href="ajuda.html">Ajuda</a></li>
@@ -22,54 +22,56 @@
 		</nav>
 	</header>
 	
-	<section>
-		<img src="img/semfoto.png" id="semfoto"></img>
-		
-		<div class="dados">
-			<div class="info">
-				<label class="labels"> Nome: </label>
-				<label class="cadastro" id="nome_usuario"> </label>
-			</div>
+	<section id="perfil">
+		<div class="fot_desc">
+			<img src="img/semfoto.png" id="semfoto"></img>
 			
-			<br>
-			<div class="info">
+			<div class="dados">
+				<div class="info">
+					<label class="labels"> Nome: </label>
+					<label class="cadastro" id="nome_usuario"> </label>
+				</div>
+				<br>
+				
+				<div class="info" >
+					<label class="labels">Data de Nascimento: </label>
+					<label class="cadastro" id="dataNasc_usuario"> </label>
+				</div>
+		</div>	
+	</div>
+			<div class="info" id="email">
 				<label class="labels">Email: </label>
 				<label class="cadastro" id="email_usuario"> </label>
 			</div>
-			<br>
 			
-			<div class="info" >
-				<label class="labels">Data de Nascimento: </label>
-				<label class="cadastro" id="dataNasc_usuario"> </label>
-			</div>
-		</div>
+		
 	</section>
-	<main></main>
-	<footer>
-		<div id="footer-content">
-			<div id="footer_contacts">
-				<img src="logos/1.png" id="foot"></img>
+	
+	<main></main><!-- Espaço em branco -->
+	<footer><!-- Inicio do meu footer -->
+		<div id="footer-content"><!-- Inicio do meu container com 3 blocos -->
+			<div id="footer_contacts"><!-- Inicio do bloco de redes sociais -->
+				<img src="logos/1.png" id="foot"></img><!-- Logoe slogan da marca -->
 				<p>Always in movement</p>
 	
-				<div id="footer_social_media">
-					<a href="https://www.instagram.com/timein.aim/" target="_blank" class="footer-link" id="instagram">
+				<div id="footer_social_media"><!-- div com nossas redes -->
+					<a href="https://www.instagram.com/timein.aim/" target="_blank" class="footer-link" id="instagram"><!-- link para nosso instagram -->
 						<img class="icone" src="img/insta2.png">  
 					</a>
 	
-					<a href="https://www.facebook.com/profile.php?id=100091952533773" target="_blank" class="footer-link" id="facebook">
+					<a href="https://www.facebook.com/profile.php?id=100091952533773" target="_blank" class="footer-link" id="facebook"><!-- link para nosso face -->
 						<img class="icone" src="img/face.png">
 					</a>
 	
 					<a href="https://twitter.com/TimeIn2000" target="_blank" class="footer-link" id="whatsapp">
-						<img class="icone" src="img/twitter.png">
+						<img class="icone" src="img/twitter.png"><!-- link para nosso twitter -->
 					</a>
 				</div>
 	
-			
 			</div>
-			<ul class="footer-list">
+			<ul class="footer-list"><!-- Inicio bloco 2 -->
 				<li>
-					<h3>Nossos Chefes</h3>
+					<h3>Nossos Chefes</h3><br><!-- <3 link para paginas de nossos professores auxiliares <3  -->
 				</li>
 				<li>
 					<a href="http://lattes.cnpq.br/0059221043399777" target="_blank" class="footer-link">Moises Savedra Omena
@@ -87,8 +89,8 @@
 					<a href="http://lattes.cnpq.br/3770740577508464 " target="_blank" class="footer-link">Marta Talitha Carvalho Freire Mendes</a>
 				</li>
 			</ul>
-			<div id="footer_subscribe">
-				<h3>Para se manter atualizado</h3>
+			<div id="footer_subscribe"><!-- Inicio bloco 3 -->
+				<h3>Para se manter atualizado</h3><!-- recebemos o email do usuario para inserirmos ele em uma lista de mensagens por email com novidades,etc -->
 				<p>Insira seu email</p>
 				<div id="input_group">
 					<input type="email" id="email" placeholder="E-mail">
@@ -97,12 +99,11 @@
 					</button>
 				</div>
 			</div>
-	<!-- "https://www.google.com/maps/place/Ifes+-+Campus+Serra/@-20.1975613,-40.2193013,17z/data=!3m1!4b1!4m6!3m5!1s0xb81de52407d8d7:0x289693da8d05dd09!8m2!3d-20.1975613!4d-40.2171126!16s%2Fg%2F11gyc3xq80">
-	Av. dos Sabiás, 330 - Morada de Laranjeiras, Serra - ES, 29166-630 -->
-		</div>
-		<div id="copyright">
+	</div>
+		<div id="copyright"><!-- reservamos todos os direitos -->
 			&#169
 			2023 all rights reserved
 		</div>
-	</footer>
+	</footer><!-- fim do footer -->
+</body>
 </html>

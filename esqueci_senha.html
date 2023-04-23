@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time in</title>
+	<link rel="icon" type="image/x-icon" href="logos/icon2.png">
+    <title>Time In</title> <!-- Título da Página -->
+    <link rel="stylesheet" href="css/styles_cadastro.css"> <!-- Link da página css -->  
+    <script src="js/script_cadastro.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <a href="login.html"> <img src="logos/1.png"> </a><!-- Header com imagem dentro de um link --> 
+    </header>
+
+    <div class="div_cadastro" id="esqueci"><!-- Div que ficará com o formulário -->
+        <h1> Esqueci minha senha </h1> <!-- Título pro formulário -->
+        <br>
+        <p id="textin">Para recuperar sua conta, preencha as perguntas seguintes e em alguns instantes a equipe 
+            Time in entrará em contato. Lembre-se de usar senhas seguras e memoráveis 😅</p>
+        <div class="formulario"> <!-- Div para estilizar o formulário -->
+            <form> <!-- Criando fomulário de Cadastro -->      
+
+                <div class="nome campos"><!-- Nome do usuário -->
+                    <input type="text" id="nome" name="nome_usuario" placeholder="Nome">
+                    <label class="erro" id="noNome">Nome deve ser preenchido!</label>
+                </div>
+
+                <!-- Idade do usuário -->
+                <div class="idade campos">
+                    <label for="idade" id="labelData">Data de Nascimento:</label>
+                    <input type="date" id="idade" name="idade_usuario">
+                    <label class="erro" id="noData">Data deve ser preenchida!</label>
+                </div> 
+
+                <!-- E-mail do usuário -->
+                <div class="email campos">
+                    <input type="email" id="email" name="user_email" placeholder="E-mail">
+                    <label class="erro" id="noEmail">E-mail deve ser preenchido!</label>
+                </div>
+                
+            </form>
+            <!-- Botão para enviar requerimento de código -->
+            <button > Enviar </button> <!-- Botão de enviar fora do form para não resetar a página ao clicar -->
+        </div>
+    </div>
 </body>
 </html>
