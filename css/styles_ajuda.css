@@ -10,8 +10,7 @@ ul {
   list-style: none;
 }
 
-
-/* Aplicando flexbox, maegem e bordas */
+/* Aplicando flexbox, margem e bordas */
 .container {
   display: flex;
   flex-direction: column;
@@ -23,45 +22,9 @@ ul {
 }
 
 
-/* Aplicando cursor */
+/* Mudando cursor no hover */
 .item:hover {
   cursor: pointer;
-}
-
-
-/* Aplicando flexbox, tamanho e fonte */
-.titulo {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  font-size: 50px;
-}
-
-/* Aplicando fonte, tamanho e uma transição */
-.item p {
-  font-size: 30px;
-  padding: 0px 20px 20px 20px;
-  transition: opacity 200ms ease-out, height 400ms ease-out;
-  height: 0;
-  opacity: 0;
-  visibility: hidden;
-}
-
-/* Aplicando tamanho, opacidade e visibilidade*/
-.item-active p {
-  visibility: visible;
-  height: 520px;
-  opacity: 0.8;
-}
-
-
-/* Aplicando tamanho, cor e display */
-.conteudo{
-  padding: 0.6rem;
-  display: none;
-  color: #000000;
-  width: 100%;
-  text-align: justify;
 }
 
 /* Aplicando tamanho, cor e alinhamento */
@@ -72,7 +35,7 @@ ul {
   text-align: justify;
 }
 
-/* Aplicando bordas e cor */
+/* Mudando bordas e cor */
 .prim{
   border-radius: 10px 10px 1px 1px;
   background-color: #145374;
@@ -85,13 +48,22 @@ ul {
   background-color: #1877f2
 }
 
-/* Aplicando bordas e cor */
-#conteudo2{
-  border-radius: 1px 1px 10px 10px;
-  background-color: #057dc2;
+/* Aplicando tamanho, cor e display */
+.conteudo{
+  padding: 0.6rem;
+  display: none;
+  color: #000000;
+  width: 100%;
+  text-align: justify;
 }
 
 /* Aplicando cor */
 #conteudo1{
+  background-color: #83e3cd;
+}
+
+/* Aplicando bordas e cor */
+#conteudo2{
+  border-radius: 1px 1px 10px 10px;
   background-color: #83e3cd;
 }

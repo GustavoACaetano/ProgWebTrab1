@@ -1,38 +1,72 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/x-icon" href="logos/icone2.png">
-    <title>Time In</title> <!-- Título da Página -->
-    <link rel="stylesheet" href="css/styles_cadastro.css"> <!-- Link da página css -->  
+
+	<link rel="icon" type="image/x-icon" href="logos/icon.png">
+
+    <title>Time In</title> 
+ 
+    <link rel="stylesheet" href="css/styles_cadastro.css"> 
+
     <script src="js/script_esqueci_senha.js" defer></script>
+
 </head>
+
 <body>
+
     <header>
-        <a href="login.html"> <img src="logos/11.png"> </a><!-- Header com imagem dentro de um link --> 
+
+        <!-- Header com imagem dentro de um link --> 
+        <a href="login.html"> <img src="logos/11.png"> </a>
+
     </header>
 
-    <div class="div_cadastro" id="esqueci"><!-- Div que ficará com o formulário -->
-        <h1> Esqueci minha senha </h1> <!-- Título pro formulário -->
+    <!-- Div que ficará com o formulário -->
+    <div class="div_cadastro" id="esqueci">
+
+        <!-- Título pro formulário -->
+        <h1> Esqueci minha senha </h1> 
+
         <br>
+
+        <!-- Texto suporte para o usuario -->
         <p id="textin">Para recuperar sua conta, preencha as perguntas seguintes. Se estiverem todas corretas, 
-            a sua senha aparecerá na caixa de alerta. Lembre-se de usar senhas seguras e memorizáveis 😅</p><!-- Texto suporte para o usuario -->
-        <div class="formulario"> <!-- Div para estilizar o formulário -->
-            <form> <!-- Criando fomulário de Cadastro -->      
+            a sua senha aparecerá na caixa de alerta. Lembre-se de usar senhas seguras e memorizáveis 😅</p>
+
+        <!-- Div para estilizar o formulário -->
+        <div class="formulario"> 
+
+            <!-- Criando fomulário de Cadastro -->   
+            <form>    
 
                 <!-- E-mail do usuário -->
                 <div class="email campos">
+
                     <input type="email" id="email_usuario" name="user_email" placeholder="E-mail">
+
                     <label class="erro" id="noEmail">E-mail deve ser preenchido!</label>
+
                     <label class="erro" id="noEmailPadrao">E-mail está fora dos padrões!</label>
+
                 </div>
                 
             </form>
-            <!-- Botão para enviar requerimento de código -->
-            <button id="btnEnviar"> Enviar </button> <!-- Botão de enviar fora do form para não resetar a página ao clicar -->
+
+            <!-- Botão para enviar requerimento de código, está fora do form para não recarregar a página ao clicar -->
+            <button id="btnEnviar"> Enviar </button> 
+
         </div>
+
     </div>
+    
 </body>
+
 </html>

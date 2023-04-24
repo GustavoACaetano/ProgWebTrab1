@@ -17,6 +17,18 @@ body{
     background-attachment: fixed;
 }
 
+/* Aplicando altura no header */
+header{
+    height: 10%;
+}
+
+/* Aplicando posição na imagem*/
+img{
+    position: absolute;
+    width: 10%;
+    left: 50px;
+    top: 50px;
+}
 
 /* Aplicando tamanho, margens, cor e bordas na div */
 .div_cadastro{
@@ -28,6 +40,15 @@ body{
     box-shadow: -1px -2px 25px 8px #000000;
 }
 
+/* Aplicando flexbox e fonte */
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    font-weight: bold;
+    font-size: 35px;
+}
 
 /* Aplicando margem e flexbox na div */
 .formulario{
@@ -44,6 +65,10 @@ form .nome{
     flex-direction: column;
 }
 
+/* Aplicando margem */
+.campos {
+    margin-top: 3%;
+}
 
 /* Selecionando todos os inputs e aplicando margem e tamanho */
 input[type="text"],
@@ -79,49 +104,11 @@ button{
     border-radius: 5px;
 }
 
-
-/* Aplicando fonte,margem e cor no link */
-a{
-    font-size: 15px;
-    color: blue;
-    margin-top: 5px;
-}
-
-
-/* Aplicando flexbox e fontes */
-h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 25px;
-    font-weight: bold;
-    font-size: 35px;
-}
-
-/* Aplicando posição na imagem e  */
-img{
-    position: absolute;
-    width: 10%;
-    left: 50px;
-    top: 50px;
-}
-
-/* Aplicando altura no header */
-header{
-    height: 10%;
-}
-
 /* Aplicando diplay e cor na mensagem de erro */
 .erro {
     display: none;
     color: #f58181;
 }
-
-/* Aplicando margem */
-.campos {
-    margin-top: 3%;
-}
-
 
 /* Configurando paragrafo com padding e espaco entre letras */
 #textin{

@@ -1,30 +1,3 @@
-/* Configuro a foto padrão dos usuários */
-#semfoto {
-    height: 8rem;
-    width: auto;
-    padding-left: 5%;
-    padding-top: 6%;
-
-}
-
-/* Posiciono a caixa com os dados variáveis */
-.dados {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5%;
-    margin-left: 6%;
-    padding: 10px;
-    border-radius: 5px;
-} 
-
-/* Configuro cada linha de variável com cor e posicionamento */
-.info{
-    background-color: rgba(128, 128, 128, 0.447);
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
 /* Configuro a estetica e posicao da carteirinha */
 #perfil{
     margin: auto;
@@ -43,19 +16,39 @@
     flex-direction: row;
 }
 
+
+/* Configuro a foto padrão dos usuários */
+#semfoto {
+    height: 8rem;
+    width: auto;
+    padding-left: 5%;
+    padding-top: 6%;
+}
+
+/* Posiciono a caixa usando flexbox */
+.dados {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 6%;
+    padding: 10px;
+    border-radius: 5px;
+} 
+
+/* Configuro cada linha de variável com cor e posicionamento */
+.info{
+    background-color: rgba(128, 128, 128, 0.447);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
 /* Padronizo os textos para a cor branca */
 .texto{
     color: white;
 }
 
-/* posiciono o parágrafo */
-#slogan{
-    position: relative;
-    left: 40px;
-
-}
-
-/* posiciono o rodape da carteirinha */
+/* Posiciono o rodape da carteirinha */
 #hashtag{
     display: flex;
     flex-direction: row;
@@ -64,7 +57,15 @@
     padding-right: 30px;
 }
 
-/* defino o tamanho da logo do rodape */
+
+/* Posiciono o parágrafo */
+#slogan{
+    position: relative;
+    left: 40px;
+
+}
+
+/* Defino o tamanho da logo do rodape */
 #logo_cart{
     width: 10%;
     margin-top: 6px;

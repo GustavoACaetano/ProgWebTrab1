@@ -1,17 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Quicksand:wght@600&display=swap');
 
 
-/* Denindo margem, fonte e preenchimento na definição geral da página */
+/* Denindo fonte definição geral da página */
 *{
     font-family: 'Quicksand', sans-serif;
 }
 
-/* Aplicando cor */
+/* Aplicando cor e deixando a imagem fixa independente do navegador */
 body{
     background: linear-gradient(to top right, #057dc2, #83e3cd);
     background-attachment: fixed;
 }
 
+/* Definindo posição*/
+img{
+    position: absolute;
+    width: 10%;
+    left: 50px;
+    top: 50px;
+}
+
+
+
+/* Definindo altura */
+header{
+    height: 10%;
+}
 
 /* Aplicando tamanho, cor, margem e bordas */
 .divLogin{
@@ -24,8 +38,14 @@ body{
     box-shadow: -1px -2px 25px 8px #000000;
 }
 
+/* Aplicando flexbox e espaçamento */
+h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
 
-/* Aplicando flexbox, margem e fonte */
+/* Aplicando flexbox, margem e tamanho da fonte */
 #form{
     margin: 30px;
     display: flex;
@@ -34,22 +54,19 @@ body{
     font-size: 20px;
 }
 
-
-/* Aplicando fonte,margem e flexbox */
+/* Aplicando tamanho da fonte, margem e flexbox */
 label{
-    font-size: 20px;
-    padding-bottom: 4%;
-    display: flex;
-    flex-direction: column;
+    font-size: 18px;
+    padding-bottom: 7%;
 }
 
 
-/* Definindo tamanho, borda e margem */
+/* Definindo tamanho, borda e margem, tamanho da fonte e tirando coportamento da borda*/
 input{
     padding: 3%;
     font-size: 18px;
     width: 94%;
-    margin-bottom: 5.5%;
+    margin-bottom: 3.5%;
     border: 1px solid black;
     outline: 0;
 }
@@ -66,8 +83,13 @@ input{
     margin-bottom: 2%;
 }
 
+/* Definindo tamanho da fonte e tirando decoração do link */
+a{
+    text-decoration: none;
+    font-size: 15px;
+}
 
-/* Aplicando flexbox */
+/* Aplicando flexbox e espaçamento */
 .log{
     display: flex;
     flex-direction: column;
@@ -76,7 +98,7 @@ input{
     padding-bottom: 5%;
 }
 
-/* Definindo tamanho, margem, borda, cor e fonte */
+/* Definindo tamanho, margem, borda, cor e tamanho da fonte */
 .log button{
     width: 45%;
     height: 45px;
@@ -88,35 +110,6 @@ input{
     font-size: 15px;
     border: 1px solid black;
 }
-
-/* Definindo fonte e tirando decoração do link */
-a{
-    text-decoration: none;
-    font-size: 15px;
-}
-
-/* Aplicando flexbox e espaçamento */
-h1{
-    display: flex;
-    justify-content: center;
-    padding-top: 5%;
-}
-
-
-/* Definin posição*/
-img{
-    position: absolute;
-    width: 10%;
-    left: 50px;
-    top: 50px;
-}
-
-
-/* Definindo altura */
-header{
-    height: 10%;
-}
-
 
 /* Aplicando display e cor */
 .erro{
