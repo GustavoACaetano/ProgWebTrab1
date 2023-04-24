@@ -2,14 +2,17 @@ const btnEnviar = document.querySelector("#btnEnviar").addEventListener("click",
 // Pegando o botão da tela e adicionando um EventListerner de click
 
 function autenticar(){
+    // Declarando variáveis
     let verificaEmail = false;
     let verificaSenha = false;
+
+    // Capturando os campos de texto e os labels de mensagem de erro
     const campoEmail = document.querySelector("#email_usuario");
     const campoSenha = document.querySelector("#senha_usuario");
     const noEmail = document.querySelector("#noEmail");
     const noPass = document.querySelector("#noPass");
     const aotPass = document.querySelector("#aotPass");
-    // Declarando variáveis
+    const noEmailPadrao = document.querySelector("#noEmailPadrao");
     
     // Verificando se o campo de email está vazio
     if(campoEmail.value == ""){
@@ -17,13 +20,25 @@ function autenticar(){
         campoEmail.style.cssText = 'border: 2px solid #f58181';
         // Mostrando a mensagem de erro;
         noEmail.style.display = "block";
+        // Escondendo a mensagem de erro;
+        noEmailPadrao.style.display = "none";
         // Variável de verificação
         verificaEmail = false;
-    }else{
+    } if(!campoEmail.value.includes("@") || !campoEmail.value.includes(".com")){
+        // Mudando a borda do campo
+        campoEmail.style.cssText = 'border: 2px solid #f58181';
+        // Escondendo a mensagem de erro
+        noEmail.style.display = "none";
+        // Mostrando a mensagem de erro;
+        noEmailPadrao.style.display = "block";
+        // Variável de verificação
+        verificaEmail = false;
+    } else {
         // Mudando a borda do campo
         campoEmail.style.cssText = 'border: 2px solid rgb(95, 201, 74)';
-        // Escondendo a mensagem de erro;
+        // Escondendo as mensagens de erro
         noEmail.style.display = "none";
+        noEmailPadrao.style.display = "none";
         // Variável de verificação
         verificaEmail = true;
     }
@@ -65,7 +80,7 @@ function autenticar(){
     // Verificando se o usuário está cadastrado
     if(verificaLogin(campoEmail.value, campoSenha.value) == "certo"){
         passaTela(campoEmail.value);
-    } else{
+    } else {
         alert(verificaLogin(campoEmail.value, campoSenha.value));
     }
 }

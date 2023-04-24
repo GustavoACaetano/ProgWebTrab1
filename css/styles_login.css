@@ -3,14 +3,13 @@
 
 /* Denindo margem, fonte e preenchimento na definição geral da página */
 *{
-    margin: 0;
-    padding: 0;
     font-family: 'Quicksand', sans-serif;
 }
 
 /* Aplicando cor */
 body{
     background: linear-gradient(to top right, #057dc2, #83e3cd);
+    background-attachment: fixed;
 }
 
 
@@ -27,12 +26,11 @@ body{
 
 
 /* Aplicando flexbox, margem e fonte */
-form{
+#form{
     margin: 30px;
     display: flex;
     flex-direction: column;
-    padding-top: 10%;
-    padding-bottom: 1%;
+    padding-top: 2%;
     font-size: 20px;
 }
 
@@ -40,7 +38,7 @@ form{
 /* Aplicando fonte,margem e flexbox */
 label{
     font-size: 20px;
-    margin-bottom: 4%;
+    padding-bottom: 4%;
     display: flex;
     flex-direction: column;
 }
@@ -75,14 +73,14 @@ input{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    padding-bottom: 5%;
 }
 
 /* Definindo tamanho, margem, borda, cor e fonte */
 .log button{
     width: 45%;
     height: 45px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     margin-top: 2%;
     border-radius: 5px;
     background-color: #057dc2;
@@ -101,15 +99,14 @@ a{
 h1{
     display: flex;
     justify-content: center;
-    padding-top: 6%;
+    padding-top: 5%;
 }
 
 
-/* Definin posição */
+/* Definin posição*/
 img{
     position: absolute;
-    width: 18%;
-    height: 15%;
+    width: 10%;
     left: 50px;
     top: 50px;
 }

@@ -1,17 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
-/* 
-:root {
-  font-family: "EB Garamond", serif;
-
-  color: rgba(255, 255, 255, 0.87);
-
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-} 
-
-*/
 
 /* Aplicando marge nas definições gerais da página */
 * {

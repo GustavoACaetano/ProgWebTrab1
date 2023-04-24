@@ -5,8 +5,8 @@
 
 /* Definições geral da página */
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -14,29 +14,27 @@
 body{
     font-family: 'Nunito', sans-serif;
     background: linear-gradient(to top right, #057dc2, #83e3cd);
+    background-attachment: fixed;
 }
 
 
 /* Aplicando tamanho, margens, cor e bordas na div */
 .div_cadastro{
-    min-height: 60%;
     width: 27%;
     background-color: rgb(255, 255, 255);
     margin: 0 auto;
-    margin-bottom: 5%;
-    margin-top: 3%;
+    margin-top: 5%;
     border-radius: 10px; 
-    box-shadow: 
-    -1px -2px 25px 8px #000000;
+    box-shadow: -1px -2px 25px 8px #000000;
 }
 
 
 /* Aplicando margem e flexbox na div */
 .formulario{
-    margin: 30px;
+    margin: 40px;
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 20px;
 }
 
@@ -44,18 +42,6 @@ body{
 form .nome{
     display: flex;
     flex-direction: column;
-}
-
-/* Selecionando todas as label e aplicando flexbox e margens */
-label[for="nome"],
-label[for="email"],
-label[for="senha"],
-label[for="idade"],
-label[for="confirmasenha"]{
-    display: flex;
-    flex-direction: column;
-    margin-top: 2px;
-    margin-bottom: 3px;
 }
 
 
@@ -77,7 +63,7 @@ div[class="jogabilidade"],
 div[class="profissa"],
 div[class="amad"],
 div[class="inic"]{
-    margin-bottom: 3%;
+    margin-bottom: 4%;
 }
 
 /* Aplicando margen,cor, borda e fonte no botão */
@@ -107,7 +93,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 25px;
     font-weight: bold;
     font-size: 35px;
 }
@@ -115,8 +101,7 @@ h1{
 /* Aplicando posição na imagem e  */
 img{
     position: absolute;
-    width: 18%;
-    height: 15%;
+    width: 10%;
     left: 50px;
     top: 50px;
 }
@@ -134,14 +119,14 @@ header{
 
 /* Aplicando margem */
 .campos {
-    margin-top: 4%;
+    margin-top: 3%;
 }
 
 
 /* Configurando paragrafo com padding e espaco entre letras */
 #textin{
     padding: 45px;
-    padding-top: 20px;
+    padding-top: 15px;
     letter-spacing: 1px;
     padding-bottom: 0px;
     text-align: justify;
